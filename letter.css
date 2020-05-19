@@ -1,0 +1,48 @@
+html, body{
+    
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: normal;
+}
+html{
+    font-size: 16px;
+    background-color:white;
+}
+body{
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* Typography  */
+h2, h3 {
+    font-family: 'Sonsie One', cursive;
+    color: #2a2a2a;
+  }
+  p, input, li {
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: #2a2a2a;
+  }
+  header{
+     width: 100%;
+  }
+  .sender {
+    text-align: right;
+  
+  }
+  
+  h1 {
+    font-size: 1.5em;
+  }
+  
+  h2 {
+    font-size: 1.3em;
+  }
+  
+  p,ul,ol,dl,address {
+    font-size: 1.1em;
+  }
+  
+  p, li, dd, dt, address {
+    line-height: 1.5;
+  }

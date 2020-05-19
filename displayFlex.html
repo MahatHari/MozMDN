@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    * {
+      box-sizing: border-box;
+    }
+    nav {
+      display: flex;
+      width: 100%;
+      background-color: aquamarine;
+
+      /*  Flex Container properties
+          flex-direction -- > row || column || row-reverse || column-reverse along main axis
+          flex-wrap --> wrap || nowrap || wrap-reverse; -  (no-wrap default, does not break container)
+                         wrap means break content to multiple lines when container cant hold
+          flex-flow  ---> short hand for flex-direction and flex-wrap   eg - row wrap (direction, wrap)
+          justify-content-- > (acts almost as text-align in main axis ) flex-start||flex-end||center||space-between||space-around
+          align-itenms -- > flex-start|| flex-end || center|| stretch || baseline -- in cross axis
+          */
+    }
+    ul {
+      display: flex;
+      background-color: rgb(202, 240, 240);
+      width: 100%;
+      text-align: center;
+      justify-content: flex-start;
+    }
+    li {
+      width: 200px;
+      height: 100px;
+      background-color: blue;
+      border: 1px solid red;
+      padding: 14px 16px;
+      /* margin: auto; */
+      text-align: left;
+      text-decoration: none;
+      list-style-type: none;
+      color: red;
+      font-size: 40px;
+      flex: 0 1 auto;
+    }
+    li:nth-child(1) {
+      margin-right: auto;
+      margin-left: 0px;
+    }
+
+    /* Flex Item Properties  */
+    /*
+        Order  reordering items inside container
+        Flex-grow  by default 0 and and when set to 1. grows and occupies free space
+        Flex-shrink  by default set to 1 and can be changed to 0
+        Flex-basis  - iniial size of a flex item, before grow and shink would work, default value is auto
+
+        Short hand: flex : grow shrink basis --- by default it is 0 1 auto; GSB
+        */
+
+    /* Align Self  */
+    /*
+            Changing position of single flex item along the CROSS AXIS without affecting
+            neighboring flex-items.
+            auto||flex-start||flex-end|| center|baseline|| stretch
+        */
+  </style>
+  <body>
+    <nav>
+      <ul>
+        <li>A</li>
+        <li>B</li>
+        <li>C</li>
+        <li>D</li>
+      </ul>
+    </nav>
+  </body>
+</html>

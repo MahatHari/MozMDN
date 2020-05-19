@@ -1,0 +1,129 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+    font-style: normal;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+/* Typography  */
+h1 {
+    font-size: 60px;
+    text-align: center;
+  }
+  
+  p, li {
+    font-size: 16px;
+    line-height: 2;
+    letter-spacing: 1px;
+  }
+  
+  
+  html {
+    background-color:#A9A9A9;
+    height: 100%;
+  }
+  
+  body {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    background-color: #54D454;
+    padding: 0 20px 20px 20px;
+    /* border: 5px solid black; */
+  }
+  
+  h1 {
+    margin: 0;
+    padding: 20px 0;
+    color:black;
+    text-shadow: 3px 3px 10px black;
+  }
+  /* header container  */
+ 
+  header{
+    display: flex;
+    margin-bottom: 10px;
+    flex-flow: row wrap;
+    background-color: rgba(0,255,0,0.5);
+
+  }
+  body > * {
+    padding: 1%;
+  }
+  main, header, nav, article, aside, footer, section {
+    background-color: rgba(0,255,0,0.5);
+    padding: 1%;
+  }
+ h1{
+    flex: 7;
+  }
+
+header img{
+    display: block;
+    height: 150px;
+    padding:20px 0 0 0 ;
+    flex:1;
+  }
+  nav{
+    display: flex;
+    width: 100%;
+    height: 80px;
+    background-color: rgba(0,255,0, 0.9);
+
+  }
+nav ul{
+    list-style-type: none;
+    width: 100%;
+    justify-content: start;
+    padding: 0;
+    /* flex:2; */
+    display: flex;
+    align-items: center;     
+
+
+  }
+  nav ul li {
+    display: inline;
+    text-align: center;
+    flex: 1;
+    align-items: center;     
+
+  }
+  nav ul li a {
+    text-align: initial;
+    text-decoration: none;
+    align-content: center;
+    color: black;
+    font-size: 2rem;
+    height: 3rem;
+    text-transform: uppercase;
+    line-height: 1.7rem;
+      
+   
+  }
+  /* Mian Layout */
+  main{
+      display: flex;
+  }
+  article, section{
+    flex: 5;
+}
+  aside{
+    flex:2;
+    margin-left: 10px;
+    padding: 1%;
+  }
+  aside img{
+      display: block;
+      float: left;
+      width: 50%;
+  }
+  footer{
+      margin-top: 10px;
+  }
+  
+
+
+
